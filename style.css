@@ -1,0 +1,283 @@
+/* ✅ GLOBAL THEME — Black Glass + Red Accents */
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    linear-gradient(120deg, #1a1a1a, #000);
+  background-size: cover;
+  margin: 0;
+  text-align: center;
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✅ NAVBAR (Dark Glass + Red Glow) */
+.navbar {
+  background: rgba(20, 20, 20, 0.65);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid rgba(255, 0, 0, 0.4);
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.nav-link {
+  color: white;
+  background: rgba(255, 0, 0, 0.35);
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 0, 0, 0.7);
+  transform: translateY(-2px);
+}
+
+/* ✅ Logout Button Red Theme */
+.logout-btn {
+  background-color: #d62828;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
+
+/* ✅ LOGIN BOX (Glass Black + Red border glow) */
+.login-box {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 0, 0, 0.45);
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
+  padding: 40px;
+  width: 320px;
+  margin: 120px auto;
+  animation: fadeIn 0.8s ease;
+}
+
+.login-box h2 {
+  margin-bottom: 15px;
+  color: #ff4d4d;
+}
+
+/* ✅ PRESERVED: Your Input Style EXACTLY — NOT MODIFIED */
+input, select {
+  width: 85%;
+  padding: 10px;
+  margin: 8px;
+  border: 1px solid #a8c4ff;
+  border-radius: 8px;
+  background: #f9fbff;
+  transition: 0.3s;
+}
+input:focus, select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74,144,226,0.5);
+}
+
+/* ✅ Buttons (Red Theme) */
+button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+button:hover {
+  background-color: #b11b23;
+  transform: scale(1.05);
+}
+
+/* ✅ Content Sections (Glass Panels) */
+.content-section {
+  display: none;
+  padding: 30px 40px;
+  background: rgba(10, 10, 10, 0.55);
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.25);
+  border: 1px solid rgba(255, 0, 0, 0.35);
+  animation: fadeIn 0.6s ease;
+  backdrop-filter: blur(18px);
+}
+.content-section.active {
+  display: block;
+}
+
+/* ✅ Search Input Resize */
+#search input {
+  width: 60%;
+  margin: 10px auto;
+  display: block;
+}
+
+/* ✅ TABLES (Black Glass + Red Accents) */
+#claim table,
+#searchTable,
+table {
+  margin: 25px auto;
+  width: 95%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.35);
+  background: rgba(5, 5, 5, 0.7);
+  color: #f5f5f5;
+  backdrop-filter: blur(12px);
+}
+
+/* ✅ Table Header (Red Gradient) */
+table thead {
+  background: linear-gradient(90deg, #8b0000, #ff1a1a);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+/* ✅ Table Cells */
+table td, table th {
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+  font-size: 15px;
+  text-align: center;
+}
+table tr:hover {
+  background: rgba(255, 0, 0, 0.15);
+}
+
+/* ✅ Developers Cards (Neon Red Glow) */
+.developer-card {
+  background: rgba(0,0,0,0.75);
+  border: 2px solid rgba(255,0,0,0.4);
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.35);
+  transition: 0.3s;
+}
+.developer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+}
+.dev-overlay {
+  background-color: rgba(90, 0, 0, 0.9);
+}
+
+/* ✅ Social Media hover animation */
+.social-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 16px rgba(255, 0, 0, 0.7);
+}
+/* ✅ PREMIUM RED & BLACK DEVELOPER CARDS */
+.developer-card {
+  background: rgba(10, 0, 0, 0.85); /* deep matte black-red */
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(255, 30, 30, 0.25);
+  width: 230px;
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(6px);
+  border: 1.5px solid rgba(255, 70, 70, 0.50); /* premium red border */
+}
+
+.developer-card img {
+  width: 105px;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 3px solid rgba(255, 60, 60, 0.6); /* red glowing border */
+  box-shadow: 0 0 12px rgba(255, 40, 40, 0.4);
+}
+
+.developer-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.55), 
+              0 0 45px rgba(255, 40, 40, 0.35);
+}
+
+/* ✅ Red Premium Overlay */
+.dev-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(70, 0, 0, 0.92); /* dark luxury red */
+  color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 18px;
+  box-sizing: border-box;
+  border-radius: 18px;
+  transition: opacity 0.45s ease;
+  backdrop-filter: blur(8px);
+}
+
+.developer-card:hover .dev-overlay {
+  opacity: 1;
+}
+
+.dev-overlay p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #ffcccc; /* soft red-white premium text */
+}
+/* ✅ PERFECT CENTER ALIGNMENT FOR DEVELOPER CARDS */
+#developers {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.developers-container {
+  display: flex;
+  justify-content: center;   /* ✅ center horizontally */
+  align-items: center;       /* ✅ align vertically */
+  gap: 40px;                 /* ✅ spacing between cards */
+  margin-top: 30px;
+  flex-wrap: nowrap;         /* ✅ keep them in one row */
+  width: 100%;
+}
+
+/* ✅ Optional: center the whole developer section container */
+#developers .content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
